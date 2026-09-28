@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="ko" data-lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>개인정보 처리방침 · KOGEP</title>
+<meta name="description" content="코겝 주식회사(KOGEP)의 개인정보 처리방침입니다. 처리하는 개인정보와 목적, 보유 기간, 위탁과 국외 이전, 정보주체의 권리를 안내합니다.">
+<link rel="canonical" href="https://www.kogep.co.kr/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KOGEP">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="개인정보 처리방침 · KOGEP">
+<meta property="og:description" content="코겝 주식회사(KOGEP)의 개인정보 처리방침입니다. 처리하는 개인정보와 목적, 보유 기간, 위탁과 국외 이전, 정보주체의 권리를 안내합니다.">
+<meta property="og:url" content="https://www.kogep.co.kr/privacy.html">
+<meta property="og:image" content="https://www.kogep.co.kr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1B4A3B">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+:root{
+  color-scheme: light;
+  --green:#1B4A3B;
+  --terracotta:#B5563A;
+  --terracotta-ink:#97432A;
+  --terracotta-glow:#E39A7D;
+  --ivory:#EFE9DC;
+  --ivory-hi:#F7F3EA;
+  --ink:#2F2B26;
+  --ink-soft:#5E564C;
+  --rule:rgba(47,43,38,.16);
+  --rule-strong:rgba(47,43,38,.34);
+  --on-green:#EFE9DC;
+  --on-green-soft:rgba(239,233,220,.76);
+  --rule-on-green:rgba(239,233,220,.24);
+  --f-display:"Archivo","IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-text:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,48px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--f-text);font-size:16px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+h1,h2,h3{text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--terracotta);outline-offset:3px}
+.doc-header :focus-visible{outline-color:#E39A7D}
+[hidden]{display:none!important}
+
+/* Language toggle: KO default, EN when data-lang="en" */
+:root:not([data-lang="en"]) .l[lang="en"],
+:root[data-lang="en"] .l[lang="ko"]{display:none!important}
+
+.wrap{max-width:880px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* Header */
+.doc-header{position:sticky;top:0;z-index:10;background:var(--green);color:var(--on-green);border-bottom:1px solid var(--rule-on-green)}
+.bar{display:flex;align-items:center;gap:16px;min-height:60px}
+.brand{display:flex;align-items:center;padding-block:8px;margin-right:auto;color:var(--on-green)}
+.logo-wm{display:block;height:18px;width:auto;aspect-ratio:3112.36/491.36;fill:currentColor}
+.home-link{font-size:14.5px;font-weight:500;text-underline-offset:4px}
+.lang{display:flex;border:1px solid var(--rule-on-green);border-radius:2px;padding:2px;gap:2px}
+.lang button{appearance:none;background:transparent;border:0;border-radius:1px;color:var(--on-green-soft);font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;padding:5px 10px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--on-green);color:var(--green)}
+
+/* Document */
+.doc{padding-block:clamp(40px,6vw,72px) clamp(56px,8vw,96px)}
+.kicker{margin:0 0 10px;font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--terracotta-ink)}
+h1{margin:0;font-size:clamp(30px,4vw,42px);line-height:1.25;color:var(--green);letter-spacing:-.01em}
+.meta{margin:14px 0 0;font-size:15px;color:var(--ink-soft)}
+.intro{margin:22px 0 0;font-size:17px}
+.prevail{margin:14px 0 0;padding:12px 14px;border:1px solid var(--rule-strong);border-radius:2px;font-size:14.5px;color:var(--ink-soft)}
+
+.summary{margin-top:32px;padding:clamp(18px,3vw,26px);background:var(--ivory-hi);border:1px solid var(--rule);border-radius:2px}
+.summary h2{margin:0 0 12px;font-size:17px;color:var(--ink)}
+.summary dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:8px 18px;margin:0}
+.summary dt{font-size:14px;font-weight:600;color:var(--terracotta-ink)}
+.summary dd{margin:0;font-size:15px}
+
+.toc{margin-top:32px}
+.toc h2{margin:0 0 10px;font-size:15px;color:var(--ink-soft)}
+.toc ol{margin:0;padding-left:1.4em;columns:2;column-gap:32px;font-size:15px}
+.toc li{break-inside:avoid;padding-block:2px}
+.toc a{text-decoration:none}
+.toc a:hover{text-decoration:underline;text-underline-offset:4px}
+
+.art{margin-top:44px;padding-top:26px;border-top:1px solid var(--rule-strong);scroll-margin-top:76px}
+.art h2{margin:0 0 14px;font-size:21px;line-height:1.4;color:var(--green)}
+.art h3{margin:22px 0 8px;font-size:17px;color:var(--ink)}
+.art p{margin:10px 0 0}
+.art ol,.art ul{margin:10px 0 0;padding-left:1.3em}
+.art li{margin-top:6px}
+.art li::marker{color:var(--terracotta-ink)}
+
+.proc{margin-top:16px;padding:16px 18px;border:1px solid var(--rule);border-radius:2px;background:var(--ivory-hi)}
+.proc h3{margin:0 0 8px}
+.proc dl{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:6px 16px;margin:0}
+.proc dt{font-size:14px;font-weight:600;color:var(--ink-soft);padding-top:1px}
+.proc dd{margin:0;font-size:15.5px}
+.proc dd .terms{margin:0;padding-left:1.1em}
+.proc dd .terms li{margin-top:3px}
+.proc dd .terms li:first-child{margin-top:0}
+
+.contacts li{margin-top:4px}
+.mono{font-family:var(--f-mono);font-size:.92em}
+
+.doc-footer{background:var(--ink);color:rgba(239,233,220,.72);font-size:13.5px;padding-block:28px}
+.doc-footer p{margin:0;display:flex;flex-wrap:wrap;gap:6px 18px}
+.doc-footer a{color:var(--ivory);text-underline-offset:4px}
+
+@media (max-width:640px){
+  .toc ol{columns:1}
+  .summary dl,.proc dl{grid-template-columns:minmax(0,1fr);gap:2px 0}
+  .summary dd,.proc dd{margin-bottom:8px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="KOGEP"><svg class="logo-wm" viewBox="0 0 3112.36 491.36" aria-hidden="true" focusable="false"><path d="M575.55 8.28L398.19 8.28L140.09 238.78L140.09 8.28L0 8.28L0 483.08L140.09 483.08L140.09 381.63L255.34 288.46L406.47 483.08L580.38 483.08L358.86 204.27L575.55 8.28ZM2135.87 293.3L2445.04 293.3L2445.04 192.54L2135.87 192.54L2135.87 112.48L2489.21 112.48L2489.21 8.28L1995.09 8.28L1995.09 483.08L2494.73 483.08L2494.73 378.87L2135.87 378.87L2135.87 293.3ZM2963.65 212.9C2952.83 222.8 2937.08 227.73 2916.37 227.73L2730.74 227.73L2730.74 112.48L2916.37 112.48C2930.18 112.48 2941.67 114.79 2950.88 119.39C2960.08 123.99 2967.21 130.55 2972.27 139.06C2977.33 147.57 2979.86 158.03 2979.86 170.46C2979.86 188.86 2974.45 203.01 2963.65 212.9ZM3092.7 85.92C3079.58 61.76 3061.4 42.79 3038.18 28.98C3014.94 15.18 2987.68 8.28 2956.4 8.28L2590.64 8.28L2590.64 483.08L2730.74 483.08L2730.74 331.94L2955.02 331.94C2986.3 331.94 3013.68 325.16 3037.14 311.58C3060.61 298.02 3079 278.92 3092.35 254.3C3105.69 229.7 3112.36 201.51 3112.36 169.77C3112.36 138.02 3105.81 110.07 3092.7 85.92ZM1055.17 253.27C1055.17 273.97 1051.14 292.72 1043.1 309.51C1035.04 326.31 1023.65 340.46 1008.94 351.95C994.21 363.46 976.61 372.2 956.14 378.18C935.67 384.16 913.01 387.15 888.17 387.15C863.32 387.15 840.78 384.16 820.54 378.18C816.18 376.89 811.97 375.45 807.86 373.91C792.86 368.29 779.47 360.99 767.74 351.95C752.79 340.46 741.4 326.31 733.58 309.51C725.76 292.72 721.85 273.97 721.85 253.27L721.85 236.71C721.85 216.47 725.76 198.06 733.58 181.49C741.4 164.93 752.79 150.91 767.74 139.4C779.47 130.38 792.86 123.08 807.85 117.45C811.97 115.91 816.18 114.46 820.54 113.18C840.78 107.2 863.32 104.2 888.17 104.2C913.01 104.2 935.67 107.2 956.14 113.18C976.61 119.16 994.21 127.91 1008.94 139.4C1023.65 150.91 1035.04 164.93 1043.1 181.49C1051.14 198.06 1055.17 216.47 1055.17 236.71L1055.17 253.27ZM1162.14 113.52C1136.83 76.95 1100.95 48.89 1054.48 29.33C1031.09 19.49 1005.41 12.13 977.48 7.24C961.52 4.45 944.81 2.49 927.38 1.31C914.69 0.45 901.64 0 888.17 0C824.68 0 769.58 9.78 722.89 29.33C676.19 48.89 640.18 76.95 614.88 113.52C589.58 150.1 576.93 194.16 576.93 245.68C576.93 297.21 589.58 341.26 614.88 377.83C640.18 414.41 676.19 442.48 722.89 462.03C769.58 481.59 824.68 491.36 888.17 491.36C901.64 491.36 914.7 490.9 927.38 490.05C944.82 488.87 961.53 486.91 977.48 484.12C1005.42 479.23 1031.09 471.87 1054.48 462.03C1100.95 442.48 1136.83 414.41 1162.14 377.83C1187.44 341.26 1200.1 297.21 1200.1 245.68C1200.1 194.16 1187.44 150.1 1162.14 113.52ZM1664.57 380.13C1642.42 384.8 1616.67 387.15 1587.24 387.15C1551.35 387.15 1520.99 382.56 1496.14 373.35C1471.3 364.15 1452.43 349.78 1439.55 330.22C1426.67 310.67 1420.23 285.25 1420.23 253.96L1420.23 237.4C1420.23 215.31 1424.25 195.99 1432.31 179.43C1440.35 162.87 1452.2 148.95 1467.85 137.68C1483.48 126.41 1502.35 118.01 1524.44 112.48C1546.52 106.97 1571.37 104.2 1598.97 104.2C1618.29 104.2 1636.69 105.7 1654.18 108.69C1657.56 109.27 1660.81 109.95 1664.05 110.65C1677.58 113.53 1689.97 117.33 1701.1 122.15C1714.91 128.13 1725.83 135.84 1733.89 145.27C1741.93 154.7 1745.96 165.87 1745.96 178.74L1751.76 178.74L1882.6 178.74C1882.6 148.84 1875.36 122.73 1860.86 100.41C1846.37 78.1 1825.9 59.59 1799.45 44.86C1772.99 30.14 1742.17 18.98 1706.97 11.39C1671.78 3.8 1633.7 0 1592.76 0C1580.28 0 1568.25 0.44 1556.44 1.09C1536.69 2.18 1517.78 4.09 1499.9 7.01C1471.71 11.61 1445.83 18.47 1422.3 27.61C1374.91 46.01 1338.68 73.5 1313.61 110.07C1288.53 146.65 1276 191.85 1276 245.68C1276 328.49 1300.03 390.15 1348.11 430.63C1383.36 460.32 1431.6 479.07 1492.71 486.99C1564.75 460.87 1624.22 423.98 1664.57 380.13Z"/><path class="logo-arrow" d="M1766.19 218.07L1762.17 218.07L1625.83 218.07L1625.83 308.48L1753.29 308.48C1726.87 382.85 1654.48 447.33 1554.32 491.22C1557.69 491.27 1561.03 491.36 1564.46 491.36C1595.75 491.36 1624.96 489.05 1652.11 484.46C1679.25 479.86 1704.21 472.72 1726.98 463.06C1749.76 453.4 1770.12 441.22 1788.06 426.49L1801.17 483.08L1883.29 483.08L1883.29 218.07L1766.19 218.07Z"/></svg></a>
+    <a class="home-link" href="index.html"><span class="l" lang="ko">홈으로</span><span class="l" lang="en">Home</span></a>
+    <div class="lang" role="group" id="lang-group" aria-label="언어 선택">
+      <button type="button" data-set-lang="ko" aria-pressed="true" lang="ko">KO</button>
+      <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap doc">
+
+<!-- ===================== 한국어 ===================== -->
+<article class="l" lang="ko">
+  <p class="kicker">KOGEP Inc.</p>
+  <h1>개인정보 처리방침</h1>
+  <p class="meta">시행일: 2026년 9월 28일</p>
+  <p class="intro">코겝 주식회사(이하 "회사")는 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고, 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립·공개합니다.</p>
+
+  <section class="summary" aria-labelledby="ko-summary">
+    <h2 id="ko-summary">한눈에 보기</h2>
+    <dl>
+      <dt>처리 목적</dt><dd>문의 응대, 고객사 계약 이행, 프리랜서·외부 강사 보수 지급, 교육 설문</dd>
+      <dt>보유 기간</dt><dd>문의와 업무 연락 기록 3년, 세무 증빙은 법정신고기한 후 5년, 계약서 10년, 회의 녹음 1년</dd>
+      <dt>위탁·국외 이전</dt><dd>Google LLC(업무용 이메일·문서), Plaud Inc.(회의 녹음 요약, 참석자가 동의한 경우만)</dd>
+      <dt>생성형 AI</dt><dd>이름·연락처 등 개인을 알아볼 수 있는 정보는 지우고 입력</dd>
+      <dt>쿠키</dt><dd>사용하지 않음</dd>
+      <dt>보호책임자</dt><dd>김나연 대표이사, privacy@kogep.co.kr</dd>
+    </dl>
+  </section>
+
+  <nav class="toc" aria-labelledby="ko-toc">
+    <h2 id="ko-toc">목차</h2>
+    <ol>
+      <li><a href="#ko-1">처리하는 개인정보와 목적·근거·보유 기간</a></li>
+      <li><a href="#ko-2">개인정보의 파기</a></li>
+      <li><a href="#ko-3">개인정보의 제3자 제공</a></li>
+      <li><a href="#ko-4">개인정보 처리의 위탁</a></li>
+      <li><a href="#ko-5">개인정보의 국외 이전</a></li>
+      <li><a href="#ko-6">고객사·협력사로부터 위탁받아 처리하는 개인정보</a></li>
+      <li><a href="#ko-7">정보주체의 권리와 행사 방법</a></li>
+      <li><a href="#ko-8">개인정보의 안전성 확보 조치</a></li>
+      <li><a href="#ko-9">자동 수집 장치(쿠키)의 설치·운영과 접속 기록</a></li>
+      <li><a href="#ko-10">개인정보 보호책임자</a></li>
+      <li><a href="#ko-11">권익침해 구제 방법</a></li>
+      <li><a href="#ko-12">개인정보 처리방침의 변경</a></li>
+    </ol>
+  </nav>
+
+  <section class="art" id="ko-1">
+    <h2>1. 처리하는 개인정보와 목적·근거·보유 기간</h2>
+    <p>회사는 다음 목적에 필요한 최소한의 개인정보만 처리합니다. 목적이 바뀌면 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 합니다.</p>
+
+    <div class="proc">
+      <h3>① 문의 응대</h3>
+      <dl>
+        <dt>처리 목적</dt><dd>이메일로 받은 문의의 확인과 답변, 상담 기록 관리</dd>
+        <dt>수집 방법</dt><dd>정보주체가 보낸 이메일(홈페이지에서는 입력 양식으로 개인정보를 받지 않습니다)</dd>
+        <dt>처리 항목</dt><dd>이름, 이메일 주소, 문의 내용 / 메일에 적어 주신 경우 회사명, 직함, 전화번호</dd>
+        <dt>처리 근거</dt><dd>계약을 체결하는 과정에서 정보주체의 요청에 따른 조치(「개인정보 보호법」 제15조 제1항 제4호)</dd>
+        <dt>보유 기간</dt><dd>문의 처리 완료 후 3년(B2B 거래는 검토 기간이 길어, 재문의와 후속 상담에 대응하기 위함). 문의가 계약으로 이어지면 ②의 기준을 따릅니다.</dd>
+      </dl>
+    </div>
+
+    <div class="proc">
+      <h3>② 고객사 계약 체결·이행</h3>
+      <dl>
+        <dt>처리 목적</dt><dd>계약 체결, 업무 협의와 연락, 회의 기록, 결과물 전달, 대금 청구와 정산</dd>
+        <dt>처리 항목</dt><dd>고객사 담당자의 이름, 소속, 직함, 이메일 주소, 전화번호 / 참석자가 동의해 회의를 녹음하는 경우 음성과 발언 내용</dd>
+        <dt>처리 근거</dt><dd>계약 체결·이행(제15조 제1항 제4호). 회의 녹음은 참석자의 동의(제15조 제1항 제1호)</dd>
+        <dt>보유 기간</dt><dd>
+          <ul class="terms">
+            <li>계약서 등 영업에 관한 중요서류: 10년(「상법」 제33조)</li>
+            <li>세금계산서 등 거래 증빙: 해당 세금의 법정신고기한이 지난 날부터 5년(「국세기본법」 제85조의3)</li>
+            <li>이메일 등 업무 연락 기록: 거래 종료 후 3년</li>
+            <li>회의 녹음과 자동 녹취록: 녹음일부터 1년(정리한 회의록은 업무 연락 기록과 함께 보관)</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="proc">
+      <h3>③ 프리랜서·외부 강사 계약과 보수 지급</h3>
+      <dl>
+        <dt>처리 목적</dt><dd>업무 계약 체결, 업무 연락, 보수 지급, 원천징수 등 세무 신고</dd>
+        <dt>처리 항목</dt><dd>이름, 전화번호, 이메일 주소, 계좌 정보(은행명, 계좌번호, 예금주) / 개인으로 보수를 받는 경우 주민등록번호(원천징수 신고용) / 사업자인 경우 상호와 사업자등록번호(세금계산서 처리용)</dd>
+        <dt>처리 근거</dt><dd>계약 체결·이행(제15조 제1항 제4호), 법령상 의무 준수(제15조 제1항 제2호, 「소득세법」). 주민등록번호는 법령에서 처리를 요구하는 경우에만 처리(제24조의2 제1항 제1호)</dd>
+        <dt>보유 기간</dt><dd>
+          <ul class="terms">
+            <li>계약서: 10년(「상법」 제33조)</li>
+            <li>보수 지급·원천징수 증빙(주민등록번호와 계좌 정보 포함): 해당 세금의 법정신고기한이 지난 날부터 5년(「국세기본법」 제85조의3)</li>
+            <li>이메일 등 업무 연락 기록: 계약 종료 후 3년</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="proc">
+      <h3>④ 교육 설문(회사가 직접 설문하는 경우)</h3>
+      <dl>
+        <dt>처리 목적</dt><dd>교육 만족도 확인과 과정 개선, 기업 컨설팅 희망 여부 확인과 상담 안내</dd>
+        <dt>처리 항목</dt><dd>설문 응답 / 상담을 원하신 경우 이름, 회사명, 이메일 주소 또는 전화번호</dd>
+        <dt>처리 근거</dt><dd>정보주체의 동의(제15조 제1항 제1호)</dd>
+        <dt>보유 기간</dt><dd>설문 종료 후 1년(동의를 철회하시면 지체 없이 파기)</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="art" id="ko-2">
+    <h2>2. 개인정보의 파기</h2>
+    <ol>
+      <li>보유 기간이 지나거나 처리 목적을 달성한 개인정보는 지체 없이 파기합니다.</li>
+      <li>다른 법령에 따라 계속 보존해야 하는 경우에는 해당 개인정보를 별도로 분리해 보관하고, 그 목적으로만 이용합니다.</li>
+      <li>전자 파일은 복구할 수 없는 방법으로 삭제하고, 종이 문서는 분쇄하거나 소각합니다.</li>
+    </ol>
+  </section>
+
+  <section class="art" id="ko-3">
+    <h2>3. 개인정보의 제3자 제공</h2>
+    <p>회사는 정보주체의 동의를 받거나 법률에 특별한 규정이 있는 경우 등 「개인정보 보호법」 제17조와 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다. 현재 제3자에게 제공하는 개인정보는 없습니다.</p>
+  </section>
+
+  <section class="art" id="ko-4">
+    <h2>4. 개인정보 처리의 위탁</h2>
+    <ol>
+      <li>회사는 원활한 업무 처리를 위해 다음과 같이 개인정보 처리 업무를 위탁합니다.
+        <ul>
+          <li><strong>Google LLC</strong>: 업무용 이메일·문서·일정의 보관과 처리(구글 워크스페이스. 워크스페이스에 포함된 Gemini 기능 포함)</li>
+          <li><strong>Plaud Inc.</strong>: 회의 녹음의 음성 인식과 요약(참석자가 녹음에 동의한 경우에만)</li>
+        </ul>
+      </li>
+      <li>문서 초안 작성과 요약 등에 쓰는 그 밖의 생성형 AI 도구(Anthropic의 Claude 등)에는 이름, 연락처, 메일 서명 등 개인을 알아볼 수 있는 정보를 지우거나 가린 뒤 입력하므로, 이 도구들에는 개인정보 처리를 위탁하지 않습니다. 회사는 모든 AI 기능을 입력한 내용이 AI 모델 학습에 쓰이지 않는 조건으로 사용합니다.</li>
+      <li>위탁 계약을 맺을 때 「개인정보 보호법」 제26조에 따라 위탁 업무 수행 목적 외 처리 금지, 안전성 확보 조치, 재위탁 제한, 수탁자 관리·감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 정하고, 수탁자가 개인정보를 안전하게 처리하는지 감독합니다.</li>
+      <li>위탁 업무의 내용이나 수탁자가 바뀌면 이 개인정보 처리방침을 통해 알립니다.</li>
+    </ol>
+  </section>
+
+  <section class="art" id="ko-5">
+    <h2>5. 개인정보의 국외 이전</h2>
+    <p>회사는 다음과 같이 개인정보를 국외로 이전(보관 포함)합니다.</p>
+
+    <div class="proc">
+      <h3>Google LLC</h3>
+      <dl>
+        <dt>이전 근거</dt><dd>계약 체결·이행에 필요한 처리위탁·보관으로, 이 처리방침에 공개(「개인정보 보호법」 제28조의8 제1항 제3호)</dd>
+        <dt>이전 국가</dt><dd>미국 등 Google 데이터센터가 있는 국가(<a href="https://datacenters.google/locations/" target="_blank" rel="noopener">데이터센터 위치 보기</a>)</dd>
+        <dt>연락처</dt><dd>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA · <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google 개인정보 보호 문의</a></dd>
+        <dt>이전 항목</dt><dd>업무용 이메일과 문서에 포함된 개인정보(1번의 처리 항목)</dd>
+        <dt>이전 시기·방법</dt><dd>이메일을 주고받거나 문서를 저장할 때 네트워크를 통해 전송</dd>
+        <dt>이용 목적</dt><dd>업무용 이메일·문서·일정의 보관과 처리(AI 모델 학습에 쓰이지 않음)</dd>
+        <dt>보유·이용 기간</dt><dd>1번에서 정한 보유 기간 동안(회사가 삭제하면 Google의 삭제 절차에 따라 지워짐)</dd>
+      </dl>
+    </div>
+
+    <div class="proc">
+      <h3>Plaud Inc.</h3>
+      <dl>
+        <dt>이전 근거</dt><dd>회의를 녹음하기 전에 참석자에게 이 항목의 내용을 알리고 별도로 동의를 받음(제28조의8 제1항 제1호)</dd>
+        <dt>이전 국가</dt><dd>미국, 독일, 일본, 싱가포르 중 Plaud가 이용 지역에 따라 지정한 데이터센터 소재 국가</dd>
+        <dt>연락처</dt><dd><span class="mono">privacy@plaud.ai</span></dd>
+        <dt>이전 항목</dt><dd>회의 녹음(음성)과 녹취록·요약에 포함된 개인정보</dd>
+        <dt>이전 시기·방법</dt><dd>녹음 파일을 올릴 때 네트워크를 통해 전송</dd>
+        <dt>이용 목적</dt><dd>음성 인식과 회의 요약(AI 모델 학습에 쓰이지 않음)</dd>
+        <dt>보유·이용 기간</dt><dd>녹음일부터 1년(회사가 삭제하면 Plaud 서버에서도 삭제)</dd>
+      </dl>
+    </div>
+
+    <p>국외 이전을 원하지 않으시면 개인정보 보호책임자에게 우편이나 이메일로 알려주세요. 회의는 동의하지 않으시면 녹음하지 않으며, 동의하지 않아도 불이익은 없습니다. 업무용 이메일(Google)로의 이전을 원하지 않으시면 이메일 대신 우편 등 다른 방법으로 응대하며, 이 경우 이메일로 진행하는 업무는 이행이 어려울 수 있습니다.</p>
+  </section>
+
+  <section class="art" id="ko-6">
+    <h2>6. 고객사·협력사로부터 위탁받아 처리하는 개인정보</h2>
+    <p>회사가 B2B 마케팅 대행이나 교육 운영 등을 위해 고객사 또는 협력사(교육 운영사 등)로부터 위탁받아 처리하는 개인정보(마케팅 캠페인 대상자 정보, 수강생 명단 등)는 해당 계약과 위탁한 회사의 개인정보 처리방침에 따라 처리하며, 위탁받은 목적 외로 이용하지 않습니다. 이 개인정보에 대한 열람, 정정·삭제, 처리정지 등은 위탁한 회사에 요청하실 수 있고, 회사에 요청하시면 지체 없이 전달합니다.</p>
+  </section>
+
+  <section class="art" id="ko-7">
+    <h2>7. 정보주체의 권리와 행사 방법</h2>
+    <ol>
+      <li>정보주체는 회사에 언제든지 개인정보 열람, 정정·삭제, 처리정지, 동의 철회를 요구할 수 있습니다.</li>
+      <li>요구는 서면이나 이메일(privacy@kogep.co.kr)로 하실 수 있으며, 회사는 지체 없이 조치합니다.</li>
+      <li>법정대리인이나 위임을 받은 사람 등 대리인을 통해서도 요구할 수 있습니다. 이 경우 위임장을 내셔야 합니다.</li>
+      <li>다른 법령에서 보존하도록 정한 개인정보는 삭제를 요구할 수 없으며, 열람과 처리정지 요구는 「개인정보 보호법」 제35조 제4항, 제37조 제2항에 따라 제한될 수 있습니다.</li>
+      <li>회사는 요구한 사람이 본인이거나 정당한 대리인인지 확인합니다.</li>
+    </ol>
+  </section>
+
+  <section class="art" id="ko-8">
+    <h2>8. 개인정보의 안전성 확보 조치</h2>
+    <p>회사는 개인정보의 안전성을 확보하기 위해 다음 조치를 하고 있습니다.</p>
+    <ul>
+      <li><strong>관리적 조치</strong>: 개인정보를 처리하는 사람을 필요한 최소 인원으로 제한</li>
+      <li><strong>기술적 조치</strong>: 업무용 계정의 2단계 인증과 접근 권한 관리, 주민등록번호 등 고유식별정보의 암호화 보관, 보안 업데이트 적용, 생성형 AI 입력 전 개인정보 제거, AI 기능의 모델 학습 사용 차단</li>
+      <li><strong>물리적 조치</strong>: 개인정보가 담긴 종이 문서를 잠금장치가 있는 곳에 보관</li>
+    </ul>
+  </section>
+
+  <section class="art" id="ko-9">
+    <h2>9. 자동 수집 장치(쿠키)의 설치·운영과 접속 기록</h2>
+    <p>회사 홈페이지는 쿠키를 사용하지 않으며, 방문자 통계나 광고를 위한 도구도 설치하지 않습니다. 이용자가 고른 표시 언어(한국어·영어)만 이용자의 브라우저에 저장하며, 이 정보로는 개인을 알아볼 수 없습니다.</p>
+    <p>홈페이지는 GitHub, Inc.(미국)의 GitHub Pages로 제공하며, 글꼴을 포함한 모든 파일을 이 서버에서 직접 제공합니다. 회사는 방문자의 접속 기록을 받거나 보관하지 않습니다. 다만 GitHub는 보안을 위해 방문자의 IP 주소를 기록·보관하며, GitHub의 처리 방식은 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub 개인정보 처리방침</a>에서 확인하실 수 있습니다.</p>
+  </section>
+
+  <section class="art" id="ko-10">
+    <h2>10. 개인정보 보호책임자</h2>
+    <p>회사는 개인정보 처리 업무를 총괄해서 책임지고, 관련 불만 처리와 피해 구제를 위해 다음과 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+    <ul>
+      <li>개인정보 보호책임자: 김나연(대표이사)</li>
+      <li>연락처: privacy@kogep.co.kr</li>
+    </ul>
+    <p>개인정보 보호와 관련한 문의, 불만, 피해 구제는 개인정보 보호책임자에게 문의하실 수 있으며, 회사는 지체 없이 답변하고 처리합니다.</p>
+  </section>
+
+  <section class="art" id="ko-11">
+    <h2>11. 권익침해 구제 방법</h2>
+    <p>정보주체는 개인정보 침해에 대한 구제를 받기 위해 아래 기관에 분쟁 해결이나 상담 등을 신청할 수 있습니다.</p>
+    <ul class="contacts">
+      <li>개인정보분쟁조정위원회: (국번 없이) 1833-6972, www.kopico.go.kr</li>
+      <li>개인정보침해신고센터: (국번 없이) 118, privacy.kisa.or.kr</li>
+      <li>대검찰청: (국번 없이) 1301, www.spo.go.kr</li>
+      <li>경찰청: (국번 없이) 182, ecrm.police.go.kr</li>
+    </ul>
+  </section>
+
+  <section class="art" id="ko-12">
+    <h2>12. 개인정보 처리방침의 변경</h2>
+    <p>이 개인정보 처리방침은 2026년 9월 28일부터 적용됩니다. 내용이 바뀌면 시행 전에 홈페이지를 통해 알리고, 이전 처리방침도 계속 확인할 수 있게 합니다.</p>
+  </section>
+</article>
+
+<!-- ===================== English ===================== -->
+<article class="l" lang="en">
+  <p class="kicker">KOGEP Inc.</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: September 28, 2026</p>
+  <p class="prevail">This English version is provided for convenience. If it differs from the Korean version, the Korean version prevails.</p>
+  <p class="intro">KOGEP Inc. ("the Company") establishes and discloses this Privacy Policy under Article 30 of Korea's Personal Information Protection Act (PIPA) to protect personal information and to handle related complaints promptly.</p>
+
+  <section class="summary" aria-labelledby="en-summary">
+    <h2 id="en-summary">At a glance</h2>
+    <dl>
+      <dt>Purposes</dt><dd>Responding to inquiries, performing client contracts, paying freelancers and external instructors, training surveys</dd>
+      <dt>Retention</dt><dd>Inquiries and business correspondence: 3 years. Tax records: 5 years after the filing deadline. Contracts: 10 years. Meeting recordings: 1 year</dd>
+      <dt>Processors and transfers</dt><dd>Google LLC (business email and documents), Plaud Inc. (meeting transcription, only with attendees' consent)</dd>
+      <dt>Generative AI</dt><dd>Names, contact details and other identifying information are removed before input</dd>
+      <dt>Cookies</dt><dd>Not used</dd>
+      <dt>Privacy officer</dt><dd>Nayeon Kim, CEO, privacy@kogep.co.kr</dd>
+    </dl>
+  </section>
+
+  <nav class="toc" aria-labelledby="en-toc">
+    <h2 id="en-toc">Contents</h2>
+    <ol>
+      <li><a href="#en-1">Information we process, purposes, legal bases and retention</a></li>
+      <li><a href="#en-2">Destruction</a></li>
+      <li><a href="#en-3">Provision to third parties</a></li>
+      <li><a href="#en-4">Outsourcing of processing</a></li>
+      <li><a href="#en-5">Transfers outside Korea</a></li>
+      <li><a href="#en-6">Information processed on behalf of clients and partners</a></li>
+      <li><a href="#en-7">Your rights</a></li>
+      <li><a href="#en-8">Security measures</a></li>
+      <li><a href="#en-9">Cookies and access logs</a></li>
+      <li><a href="#en-10">Privacy officer</a></li>
+      <li><a href="#en-11">Remedies</a></li>
+      <li><a href="#en-12">Changes to this policy</a></li>
+    </ol>
+  </nav>
+
+  <section class="art" id="en-1">
+    <h2>1. Information we process, purposes, legal bases and retention</h2>
+    <p>We process only the minimum personal information needed for the purposes below. If a purpose changes, we take the steps PIPA Article 18 requires, such as obtaining separate consent.</p>
+
+    <div class="proc">
+      <h3>(1) Inquiries</h3>
+      <dl>
+        <dt>Purpose</dt><dd>Reviewing and answering inquiries received by email and keeping a record of them</dd>
+        <dt>How collected</dt><dd>Emails you send us (the website has no forms that collect personal information)</dd>
+        <dt>Items</dt><dd>Name, email address, message; company, job title and phone number if you include them</dd>
+        <dt>Legal basis</dt><dd>Steps taken at your request in the course of entering into a contract (PIPA Art. 15(1)4)</dd>
+        <dt>Retention</dt><dd>3 years after the inquiry is resolved (B2B purchases take time to evaluate, so we keep records to handle follow-up questions and consultations). If an inquiry leads to a contract, section (2) applies.</dd>
+      </dl>
+    </div>
+
+    <div class="proc">
+      <h3>(2) Client contracts</h3>
+      <dl>
+        <dt>Purpose</dt><dd>Signing and performing contracts, business communication, meeting records, delivering work, invoicing and settlement</dd>
+        <dt>Items</dt><dd>Client contact's name, organization, job title, email address and phone number; voice and what is said, if attendees agree to a meeting being recorded</dd>
+        <dt>Legal basis</dt><dd>Signing and performing a contract (Art. 15(1)4). Meeting recordings are made with attendees' consent (Art. 15(1)1)</dd>
+        <dt>Retention</dt><dd>
+          <ul class="terms">
+            <li>Contracts and other important business documents: 10 years (Commercial Act, Art. 33)</li>
+            <li>Tax invoices and other transaction records: 5 years after the statutory filing deadline for the relevant tax (Framework Act on National Taxes, Art. 85-3)</li>
+            <li>Business correspondence such as email: 3 years after the business relationship ends</li>
+            <li>Meeting recordings and automatic transcripts: 1 year from the recording date (written meeting notes are kept with business correspondence)</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="proc">
+      <h3>(3) Freelancers and external instructors</h3>
+      <dl>
+        <dt>Purpose</dt><dd>Service contracts, communication, payment, tax withholding and filing</dd>
+        <dt>Items</dt><dd>Name, phone number, email address, bank account details (bank, account number, holder); resident registration number if paid as an individual (for tax withholding); business name and business registration number if paid as a business (for tax invoices)</dd>
+        <dt>Legal basis</dt><dd>Signing and performing a contract (Art. 15(1)4) and legal obligations (Art. 15(1)2, Income Tax Act). Resident registration numbers are processed only where the law requires it (Art. 24-2(1)1)</dd>
+        <dt>Retention</dt><dd>
+          <ul class="terms">
+            <li>Contracts: 10 years (Commercial Act, Art. 33)</li>
+            <li>Payment and tax withholding records (including resident registration numbers and bank details): 5 years after the statutory filing deadline for the relevant tax (Framework Act on National Taxes, Art. 85-3)</li>
+            <li>Business correspondence such as email: 3 years after the contract ends</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="proc">
+      <h3>(4) Training surveys (when we run the survey ourselves)</h3>
+      <dl>
+        <dt>Purpose</dt><dd>Checking satisfaction, improving courses, and asking whether participants want corporate consulting, then following up with those who do</dd>
+        <dt>Items</dt><dd>Survey answers; if you want a consultation, your name, company, and email address or phone number</dd>
+        <dt>Legal basis</dt><dd>Your consent (Art. 15(1)1)</dd>
+        <dt>Retention</dt><dd>1 year after the survey closes; destroyed without delay if you withdraw consent</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="art" id="en-2">
+    <h2>2. Destruction</h2>
+    <ol>
+      <li>We destroy personal information without delay once its retention period ends or its purpose has been achieved.</li>
+      <li>Where another law requires us to keep it, we store it separately and use it only for that purpose.</li>
+      <li>Electronic files are deleted so they cannot be recovered. Paper documents are shredded or incinerated.</li>
+    </ol>
+  </section>
+
+  <section class="art" id="en-3">
+    <h2>3. Provision to third parties</h2>
+    <p>We provide personal information to third parties only in the cases set out in PIPA Articles 17 and 18, such as with your consent or where a law specifically allows it. We currently provide no personal information to third parties.</p>
+  </section>
+
+  <section class="art" id="en-4">
+    <h2>4. Outsourcing of processing</h2>
+    <ol>
+      <li>We outsource the following processing:
+        <ul>
+          <li><strong>Google LLC</strong>: storing and processing business email, documents and calendars (Google Workspace, including the Gemini features built into Workspace)</li>
+          <li><strong>Plaud Inc.</strong>: speech recognition and summaries of meeting recordings (only when attendees agree to the recording)</li>
+        </ul>
+      </li>
+      <li>When we use other generative AI tools (such as Anthropic's Claude) for drafting and summarizing, we remove or mask names, contact details, email signatures and anything else that could identify a person before entering it, so we do not outsource the processing of personal information to these tools. We use all AI features only on terms under which our inputs are not used to train AI models.</li>
+      <li>Under PIPA Article 26, our outsourcing agreements set out the processor's obligations, including no processing beyond the outsourced purpose, security measures, limits on sub-processing, supervision and liability. We supervise processors to make sure they handle personal information safely.</li>
+      <li>If the outsourced work or the processor changes, we will announce it in this policy.</li>
+    </ol>
+  </section>
+
+  <section class="art" id="en-5">
+    <h2>5. Transfers outside Korea</h2>
+    <p>We transfer (including store) personal information outside Korea as follows.</p>
+
+    <div class="proc">
+      <h3>Google LLC</h3>
+      <dl>
+        <dt>Legal basis</dt><dd>Outsourcing and storage needed to enter into and perform contracts, disclosed in this policy (PIPA Art. 28-8(1)3)</dd>
+        <dt>Country</dt><dd>United States and other countries where Google operates data centers (<a href="https://datacenters.google/locations/" target="_blank" rel="noopener">see data center locations</a>)</dd>
+        <dt>Contact</dt><dd>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA · <a href="https://support.google.com/policies/contact/general_privacy_form" target="_blank" rel="noopener">Google privacy contact</a></dd>
+        <dt>Items</dt><dd>Personal information contained in business email and documents (the items in section 1)</dd>
+        <dt>When and how</dt><dd>Sent over the network when emails are exchanged or documents are stored</dd>
+        <dt>Purpose</dt><dd>Storing and processing business email, documents and calendars (not used to train AI models)</dd>
+        <dt>Retention</dt><dd>For the retention periods in section 1; once we delete it, it is erased through Google's deletion process</dd>
+      </dl>
+    </div>
+
+    <div class="proc">
+      <h3>Plaud Inc.</h3>
+      <dl>
+        <dt>Legal basis</dt><dd>Before recording a meeting, we tell attendees what this section says and ask for their separate consent (Art. 28-8(1)1)</dd>
+        <dt>Country</dt><dd>The data center Plaud assigns for the user's region: United States, Germany, Japan or Singapore</dd>
+        <dt>Contact</dt><dd><span class="mono">privacy@plaud.ai</span></dd>
+        <dt>Items</dt><dd>Personal information contained in meeting recordings (voice), transcripts and summaries</dd>
+        <dt>When and how</dt><dd>Sent over the network when recordings are uploaded</dd>
+        <dt>Purpose</dt><dd>Speech recognition and meeting summaries (not used to train AI models)</dd>
+        <dt>Retention</dt><dd>1 year from the recording date (deleted from Plaud's servers when we delete it)</dd>
+      </dl>
+    </div>
+
+    <p>If you do not want your information transferred outside Korea, tell our privacy officer by post or email. We record meetings only with your consent, and saying no has no consequences for you. If you do not want your information sent to our business email provider (Google), we will respond by post or other means instead of email, and work carried out by email may then be difficult to perform.</p>
+  </section>
+
+  <section class="art" id="en-6">
+    <h2>6. Information processed on behalf of clients and partners</h2>
+    <p>Personal information we process on behalf of clients or partners, such as B2B marketing campaign contacts or course participant lists from a training operator, is processed under our agreement with them and their privacy policy, and is not used for any other purpose. You can ask the company that entrusted the information to us for access, correction, deletion or suspension of processing. If you ask us, we will pass your request on without delay.</p>
+  </section>
+
+  <section class="art" id="en-7">
+    <h2>7. Your rights</h2>
+    <ol>
+      <li>You may ask us at any time to give you access to, correct, delete or stop processing your personal information, or to withdraw your consent.</li>
+      <li>You can make a request in writing or by email (privacy@kogep.co.kr), and we will act on it without delay.</li>
+      <li>A legal representative or someone you authorize may also make a request on your behalf, with a power of attorney.</li>
+      <li>Information that another law requires us to keep cannot be deleted, and access and suspension requests may be limited under PIPA Articles 35(4) and 37(2).</li>
+      <li>We will check that the person making a request is you or your authorized representative.</li>
+    </ol>
+  </section>
+
+  <section class="art" id="en-8">
+    <h2>8. Security measures</h2>
+    <ul>
+      <li><strong>Administrative</strong>: only the minimum number of people handle personal information</li>
+      <li><strong>Technical</strong>: two-step verification and access control on business accounts, encrypted storage of resident registration numbers and other unique identifiers, security updates, removing personal information before using generative AI, and using AI features only where inputs are not used for model training</li>
+      <li><strong>Physical</strong>: paper documents containing personal information are kept in a locked place</li>
+    </ul>
+  </section>
+
+  <section class="art" id="en-9">
+    <h2>9. Cookies and access logs</h2>
+    <p>Our website does not use cookies and has no analytics or advertising tools. It stores only your display language choice (Korean or English) in your browser, which cannot be used to identify you.</p>
+    <p>The website is served from GitHub Pages (GitHub, Inc., United States), and every file, including fonts, is served from there. We do not receive or keep visitor access logs. GitHub logs and stores visitors' IP addresses for security purposes; the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub General Privacy Statement</a> explains how GitHub handles this information.</p>
+  </section>
+
+  <section class="art" id="en-10">
+    <h2>10. Privacy officer</h2>
+    <p>Our privacy officer is responsible for all personal information processing and for handling complaints and remedies.</p>
+    <ul>
+      <li>Privacy officer: Nayeon Kim (CEO)</li>
+      <li>Contact: privacy@kogep.co.kr</li>
+    </ul>
+    <p>You can contact the privacy officer with any privacy question, complaint or request for remedy, and we will respond without delay.</p>
+  </section>
+
+  <section class="art" id="en-11">
+    <h2>11. Remedies</h2>
+    <p>You can apply to the following organizations for dispute resolution or advice about a privacy infringement (phone numbers are for use within Korea).</p>
+    <ul class="contacts">
+      <li>Personal Information Dispute Mediation Committee: 1833-6972, www.kopico.go.kr</li>
+      <li>Personal Information Infringement Report Center: 118, privacy.kisa.or.kr</li>
+      <li>Supreme Prosecutors' Office: 1301, www.spo.go.kr</li>
+      <li>Korean National Police Agency: 182, ecrm.police.go.kr</li>
+    </ul>
+  </section>
+
+  <section class="art" id="en-12">
+    <h2>12. Changes to this policy</h2>
+    <p>This policy applies from September 28, 2026. We will announce any changes on the website before they take effect and keep previous versions available.</p>
+  </section>
+</article>
+
+</main>
+
+<footer class="doc-footer">
+  <div class="wrap">
+    <p><a href="index.html"><span class="l" lang="ko">홈으로</span><span class="l" lang="en">Home</span></a><span>© 2026 KOGEP Inc.</span></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  function applyLang(next) {
+    var lang = next === 'en' ? 'en' : 'ko';
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang);
+    Array.prototype.forEach.call(document.querySelectorAll('[data-set-lang]'), function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-set-lang') === lang));
+    });
+    document.getElementById('lang-group').setAttribute('aria-label', lang === 'en' ? 'Language' : '언어 선택');
+    document.title = lang === 'en' ? 'Privacy Policy · KOGEP' : '개인정보 처리방침 · KOGEP';
+    try { localStorage.setItem('kogep-lang', lang); } catch (e) {}
+  }
+  var initial = 'ko';
+  try { initial = localStorage.getItem('kogep-lang') || 'ko'; } catch (e) {}
+  if (/^#en/.test(location.hash)) initial = 'en';
+  applyLang(initial);
+  Array.prototype.forEach.call(document.querySelectorAll('[data-set-lang]'), function (b) {
+    b.addEventListener('click', function () { applyLang(b.getAttribute('data-set-lang')); });
+  });
+})();
+</script>
+</body>
+</html>
